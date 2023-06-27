@@ -80,6 +80,8 @@ class ChatMessage(BaseModel):
 
 
 def get_folder_path(local_doc_id: str):
+    print(f"local_doc_id:{local_doc_id}")
+    print(f"KB_ROOT_PATH:{KB_ROOT_PATH}")
     return os.path.join(KB_ROOT_PATH, local_doc_id, "content")
 
 
