@@ -65,6 +65,13 @@ llm_model_dict = {
         "provides": "ChatGLM"
     },
 
+    "chatglm2-6b-int4": {
+        "name": "chatglm2-6b-int4",
+        "pretrained_model_name": "THUDM/chatglm2-6b-int4",
+        "local_model_path": None,
+        "provides": "ChatGLM"
+    },
+
     "chatyuan": {
         "name": "chatyuan",
         "pretrained_model_name": "ClueAI/ChatYuan-large-v2",
@@ -111,7 +118,7 @@ llm_model_dict = {
 }
 
 # LLM 名称
-LLM_MODEL = "fastchat-chatglm2-6b"
+LLM_MODEL = "chatglm2-6b-int4"
 # 量化加载8bit 模型
 LOAD_IN_8BIT = False
 # Load the model with bfloat16 precision. Requires NVIDIA Ampere GPU.
